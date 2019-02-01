@@ -1,0 +1,23 @@
+﻿@page
+@model ASP_Core_hw_EmailClient_RazorPages.Pages.SendModel
+@{
+    ViewData["Title"] = "Send";
+}
+
+<h2>Send</h2>
+<form method="post">
+    
+    <label for="From">From</label>
+    <input type="text" id="From" name="From" />
+
+    <label for="To">To</label>
+    <input type="text" id="To" name="To" />
+
+    <label for="Title">Title</label>
+    <input type="text" id="Title" name="Title" />
+
+    <label for="Text">Text</label>
+    <input type="text" id="Text" name="Text" />
+
+    <input type="submit" value="Send" />
+</form>

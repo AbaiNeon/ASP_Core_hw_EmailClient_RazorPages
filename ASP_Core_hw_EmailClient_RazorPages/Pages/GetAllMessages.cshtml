@@ -1,0 +1,21 @@
+﻿@page
+@model ASP_Core_hw_EmailClient_RazorPages.Pages.GetAllMessagesModel
+@{
+    ViewData["Title"] = "GetAllMessages";
+}
+
+<h2>GetAllMessages</h2>
+
+<table class="table">
+    <thead>
+        <tr><th>From</th><th>To</th><th>Title</th><th>Text</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model.Messages)
+        {
+            <tr><td>@message.From</td><td>@message.To</td><td>@message.Title</td><td>@message.Text</td></tr>
+        }
+    </tbody>
+</table>
+
+
