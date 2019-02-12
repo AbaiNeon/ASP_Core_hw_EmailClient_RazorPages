@@ -43,7 +43,7 @@ namespace ASP_Core_hw_EmailClient_RazorPages.Pages
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
 
             // логин и пароль
-            string password = "5Sviuk:gma";
+            string password = "pswrd";
             smtp.Credentials = new NetworkCredential(mailFrom, password);
             smtp.EnableSsl = true;
             smtp.Send(m);
@@ -55,29 +55,6 @@ namespace ASP_Core_hw_EmailClient_RazorPages.Pages
             
         }
 
-        //public void OnPost(Message message)
-        //{
-        //    // отправитель - устанавливаем адрес и отображаемое в письме имя
-        //    string mailFrom = message.From;
-        //    MailAddress _from = new MailAddress(mailFrom, "Abai");
-        //    // кому отправляем
-        //    MailAddress _to = new MailAddress(message.To);
-        //    // создаем объект сообщения
-        //    MailMessage m = new MailMessage(_from, _to);
-        //    // тема письма
-        //    m.Subject = message.Title;
-        //    // текст письма
-        //    m.Body = message.Text;
-        //    // письмо представляет код html
-        //    m.IsBodyHtml = false;
-        //    // адрес smtp-сервера и порт, с которого будем отправлять письмо
-        //    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-
-        //    // логин и пароль
-        //    string password = "5Sviuk:gma";
-        //    smtp.Credentials = new NetworkCredential(mailFrom, password);
-        //    smtp.EnableSsl = true;
-        //    smtp.Send(m);
-        //}
+        
     }
 }
